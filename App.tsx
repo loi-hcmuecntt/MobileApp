@@ -17,7 +17,6 @@ import ProfileScreen from './source/screen/ProfileScreen';
 
 
 import { DrawerNavigation } from './source/components'
-import CustomDrawer from './source/components/CustomDrawer'
 import store from "./source/redux/store";
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
@@ -42,7 +41,6 @@ export default function App() : React.JSX.Element {
             <Stack.Screen name="RestaurentsScreen" component={RestaurentsScreen} />
             <Stack.Screen name="CheckoutScreen" component={CheckoutScreen} />
             <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
-            <Stack.Screen name="CustomDrawer" component={CustomDrawer} />
           </Stack.Navigator>
         </NavigationContainer>
       </ToastProvider>
