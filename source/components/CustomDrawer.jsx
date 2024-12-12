@@ -38,11 +38,11 @@ const CustomDrawer = props => {
     <View style={{flex: 1}}>
       <DrawerContentScrollView>
         <ImageBackground 
-          source={require('./../assets/menu-bg.jpg')}
+          source={require('../assets/menu-bg.jpg')}
           style={{padding:20}}
         >
           <Image 
-            source={require('./../assets/user-profile.png')}
+            source={require('../assets/user-profile.png')}
             style={{height: 80, width: 80, borderRadius: 40, marginBottom: 10}} 
           />
           <Text

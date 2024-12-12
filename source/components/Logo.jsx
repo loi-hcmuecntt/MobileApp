@@ -3,7 +3,7 @@ import React from 'react'
 
 const Logo = () => {
   return (
-    <Image source={require('./../assets/logo.png')} style={styles.image} />
+    <Image source={require('../assets/logo.png')} style={styles.image} />
   )
 }
 

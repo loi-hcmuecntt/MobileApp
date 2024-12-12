@@ -75,7 +75,7 @@ const HistoryScreen = ({ navigation }) => {
               disabled={true}
             >
               <View style={styles.cardcontent}>
-                <Image style={styles.cardimage} source={require('./../assets/orders.jpg')} />
+                <Image style={styles.cardimage} source={require('../assets/orders.jpg')} />
                 <View style={styles.carddetails}>
               
                   <View 

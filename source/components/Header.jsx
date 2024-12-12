@@ -2,7 +2,7 @@ import { View, Text, StyleSheet } from 'react-native'
 import React, { useState } from 'react'
 import { IconButton, MD3Colors, Badge} from 'react-native-paper';
 import { useSelector } from 'react-redux'
-import { cartTotalSelector } from "./../redux/selector";
+import { cartTotalSelector } from "../redux/selector";
 
 const Header = ({ title }) => {
 

@@ -116,7 +116,7 @@ const RestaurantsScreen = ({ navigation }) => {
 
             <Chip 
               mode='outlined' 
-              avatar={<Avatar.Image size={24} source={require('./../assets/resetfood.jpg')} />}
+              avatar={<Avatar.Image size={24} source={require('../assets/resetfood.jpg')} />}
               onPress={() => searchBySpeciality("all")} 
               style={{height:40, marginRight:10}}
             >
@@ -125,7 +125,7 @@ const RestaurantsScreen = ({ navigation }) => {
 
             <Chip 
               mode='outlined' 
-              avatar={<Avatar.Image size={24} source={require('./../assets/com-tam.jpg')} />}
+              avatar={<Avatar.Image size={24} source={require('../assets/com-tam.jpg')} />}
               onPress={() => searchBySpeciality("Com")} 
               style={{height:40, marginRight:10}}
             >
@@ -134,7 +134,7 @@ const RestaurantsScreen = ({ navigation }) => {
 
             <Chip 
               mode='outlined' 
-              avatar={<Avatar.Image size={24} source={require('./../assets/pho.jpg')} />}
+              avatar={<Avatar.Image size={24} source={require('../assets/pho.jpg')} />}
               onPress={() => searchBySpeciality("Pho")} 
               style={{height:40, marginRight:10}}
             >
@@ -143,7 +143,7 @@ const RestaurantsScreen = ({ navigation }) => {
 
             <Chip 
               mode='outlined' 
-              avatar={<Avatar.Image size={24} source={require('./../assets/mi.jpg')} />}
+              avatar={<Avatar.Image size={24} source={require('../assets/mi.jpg')} />}
               onPress={() => searchBySpeciality("Mi")} 
               style={{height:40, marginRight:10}}
             >
@@ -152,7 +152,7 @@ const RestaurantsScreen = ({ navigation }) => {
 
             <Chip 
               mode='outlined' 
-              avatar={<Avatar.Image size={24} source={require('./../assets/Hombourger.jpg')} />}
+              avatar={<Avatar.Image size={24} source={require('../assets/Hombourger.jpg')} />}
               onPress={() => searchBySpeciality("Fastfood")} 
               style={{height:40, marginRight:10}}
             >
@@ -161,7 +161,7 @@ const RestaurantsScreen = ({ navigation }) => {
 
             <Chip 
               mode='outlined' 
-              avatar={<Avatar.Image size={24} source={require('./../assets/Pizza.jpg')} />}
+              avatar={<Avatar.Image size={24} source={require('../assets/Pizza.jpg')} />}
               onPress={() => searchBySpeciality("Pizza")} 
               style={{height:40, marginRight:10}}
             >
@@ -170,7 +170,7 @@ const RestaurantsScreen = ({ navigation }) => {
 
             <Chip 
               mode='outlined' 
-              avatar={<Avatar.Image size={24} source={require('./../assets/plats.jpg')} />}
+              avatar={<Avatar.Image size={24} source={require('../assets/plats.jpg')} />}
               onPress={() => searchBySpeciality("Dishes")} 
               style={{height:40, marginRight:10}}
             >
@@ -178,7 +178,7 @@ const RestaurantsScreen = ({ navigation }) => {
             </Chip>
             <Chip 
               mode='outlined' 
-              avatar={<Avatar.Image size={24} source={require('./../assets/do-uong.jpg')} />}
+              avatar={<Avatar.Image size={24} source={require('../assets/do-uong.jpg')} />}
               onPress={() => searchBySpeciality("Drinks")} 
               style={{height:40, marginRight:10}}
             >

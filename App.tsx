@@ -3,22 +3,22 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { ToastProvider } from 'react-native-toast-notifications'
 import { Provider } from 'react-redux';
-import SplashScreen  from "./src/screen/SplashScreen";
-import StartScreen  from "./src/screen/StartScreen";
-import LoginScreen from './src/screen/LoginScreen';
-import ResetPasswordScreen from './src/screen/ResetPasswordScreen';
-import RegisterScreen from './src/screen/RegisterScreen';
-import MenuItemScreen from './src/screen/MenuItemScreen';
-import OrderDetailScreen from './src/screen/OrderDetailScreen';
-import CartScreen from './src/screen/CartScreen';
-import CheckoutScreen from './src/screen/CheckoutScreen';
-import RestaurentsScreen from './src/screen/RestaurentsScreen';
-import ProfileScreen from './src/screen/ProfileScreen';
+import SplashScreen  from "./source/screen/SplashScreen";
+import StartScreen  from "./source/screen/StartScreen";
+import LoginScreen from './source/screen/LoginScreen';
+import ResetPasswordScreen from './source/screen/ResetPasswordScreen';
+import RegisterScreen from './source/screen/RegisterScreen';
+import MenuItemScreen from './source/screen/MenuItemScreen';
+import OrderDetailScreen from './source/screen/OrderDetailScreen';
+import CartScreen from './source/screen/CartScreen';
+import CheckoutScreen from './source/screen/CheckoutScreen';
+import RestaurentsScreen from './source/screen/RestaurentsScreen';
+import ProfileScreen from './source/screen/ProfileScreen';
 
 
-import { DrawerNavigation } from './src/components'
-import CustomDrawer from './src/components/CustomDrawer'
-import store from "./src/redux/store";
+import { DrawerNavigation } from './source/components'
+import CustomDrawer from './source/components/CustomDrawer'
+import store from "./source/redux/store";
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
 const Stack = createNativeStackNavigator();
