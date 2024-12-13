@@ -89,18 +89,6 @@ const MenuItemScreen = ({ navigation }) => {
           </View>
         </View>
 
-        <Searchbar
-          placeholder="Tìm kiếm"
-          style={{
-            marginVertical:15,
-            padding:8,
-            borderRadius:30,
-            backgroundColor:'#e3e3e3'
-          }}
-          onChangeText={(text) => onChangeSearch(text)}
-          value={searchQuery}
-        />
-
         {
           menuItems.map((item, index) => (
             <TouchableOpacity 

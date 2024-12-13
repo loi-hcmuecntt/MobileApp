@@ -67,7 +67,7 @@ const OrderDetailScreen = ({ navigation }) => {
                     color={MD3Colors.green500} 
                     size={15}
                   />
-                  <Text style={{fontSize:15, color: MD3Colors.green500, marginLeft:5} }>{order.price} DT</Text>
+                  <Text style={{fontSize:15, color: MD3Colors.green500, marginLeft:5} }>{order.price} VND</Text>
 
                   <View 
                   style={{ 
@@ -106,7 +106,7 @@ const OrderDetailScreen = ({ navigation }) => {
                       marginLeft:5
                     }}
                   >
-                    {order.price * order.quantity} DT
+                    {order.price * order.quantity} VND
                   </Text>
                 </View>
               </View>

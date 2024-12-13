@@ -5,12 +5,12 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import { useToast } from 'react-native-toast-notifications';
 import { useRoute } from '@react-navigation/native';
 import CustomDrawer from './CustomDrawer';
-import RestaurantsScreen from '../screen/RestaurentsScreen';
 import HistoryScreen from '../screen/HistoryScreen';
 import ProfileScreen from '../screen/ProfileScreen';
 import ChangeEmailScreen from '../screen/ChangeEmailScreen';
 import ChangePasswordScreen from '../screen/ChangePasswordScreen';
 import AboutScreen from '../screen/AboutScreen';
+import RestaurantsScreen from '../screen/RestaurantsScreen';
 
 const Drawer = createDrawerNavigator();
 
@@ -40,38 +40,16 @@ const DrawerNavigation = ({ navigation }) => {
       console.log(e)
     }
   }
-  const handleLogout = async () => {
-    try {
-      await AsyncStorage.removeItem('@token');
-      toast.show("Logged out successfully!", {
-        type: "success",
-        placement: "bottom",
-        duration: 3000,
-        offset: 30,
-        animationType: "zoom-in",
-      });
-      navigation.navigate("LoginScreen");
-    } catch (error) {
-      toast.show("Error logging out!", {
-        type: "danger",
-        placement: "bottom",
-        duration: 4000,
-        offset: 30,
-        animationType: "zoom-in",
-      });
-      console.error(error);
-    }
-  }
 
   return (
     <Drawer.Navigator
-      initialRouteName="Restaurents"
+      initialRouteName="Restaurants"
       screenOptions={{ headerShown: false}}
       drawerContent={props => <CustomDrawer {...props} />}
     >
       <Drawer.Screen 
         initialParams={{user: route.params.user}}
-        name="Restaurents" 
+        name="Restaurants" 
         component={RestaurantsScreen} 
         options={{
           drawerIcon:({color}) => (
@@ -131,23 +109,6 @@ const DrawerNavigation = ({ navigation }) => {
           drawerIcon:({color}) => (
             <Ionicons name="information-circle-outline" size={22} color={color}/>
           ),
-        }}
-      />
-      <Drawer.Screen
-        name="Logout"
-        component={() => null} // Empty component, logout will be triggered manually
-        options={{
-          drawerLabel: 'Logout',
-          drawerIcon: ({ color }) => (
-            <Ionicons name="log-out-outline" size={22} color={color} />
-          ),
-          drawerItemStyle: {
-            marginTop: 100, // Make it visually separated
-          },
-          unmountOnBlur: true, // Prevent component from staying mounted
-        }}
-        listeners={{
-          focus: handleLogout, // Trigger logout on drawer item focus
         }}
       />
 

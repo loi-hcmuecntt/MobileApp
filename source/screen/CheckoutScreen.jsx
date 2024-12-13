@@ -43,7 +43,7 @@ const CheckoutScreen = ({ navigation }) => {
           animationType: "zoom-in"
         })
         dispatch(clear())
-        navigation.navigate("RestaurentsScreen", { restaurant:route.params.restaurant, user:route.params.user})
+        navigation.navigate("RestaurantsScreen", { restaurant:route.params.restaurant, user:route.params.user})
       }else {
         toast.show(result.data.message, {
           type: "danger",
@@ -87,17 +87,10 @@ const CheckoutScreen = ({ navigation }) => {
               </TouchableOpacity>
             ))
           }
-          <Text style={{fontSize:15, fontWeight:'bold', color: '#3C4048', marginLeft:5} }></Text>
-          <Button 
-            mode="text" 
-            color="#3C4048"
-            style={styles.button}
-          >
-              Tổng: {totalPrice} VND
-          </Button>
+          <Text style={{fontSize:30, fontWeight:'bold', color: '#3C4048', textAlign: 'center', lineHeight: 100} }>Tổng: {totalPrice} VND</Text>
           <Button 
             mode="contained" 
-            color="#00ABB3"
+            buttonColor="#00ABB3"
             onPress={onOrderSubmit}
             style={styles.button}
           >

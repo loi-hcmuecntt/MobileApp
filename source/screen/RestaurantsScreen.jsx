@@ -158,24 +158,6 @@ const RestaurantsScreen = ({ navigation }) => {
             >
               Thức ăn nhanh
             </Chip>
-
-            <Chip 
-              mode='outlined' 
-              avatar={<Avatar.Image size={24} source={require('../assets/Pizza.jpg')} />}
-              onPress={() => searchBySpeciality("Pizza")} 
-              style={{height:40, marginRight:10}}
-            >
-              Pizza
-            </Chip>
-
-            <Chip 
-              mode='outlined' 
-              avatar={<Avatar.Image size={24} source={require('../assets/plats.jpg')} />}
-              onPress={() => searchBySpeciality("Dishes")} 
-              style={{height:40, marginRight:10}}
-            >
-              Dishes
-            </Chip>
             <Chip 
               mode='outlined' 
               avatar={<Avatar.Image size={24} source={require('../assets/do-uong.jpg')} />}

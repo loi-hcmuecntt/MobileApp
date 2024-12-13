@@ -91,7 +91,7 @@ const HistoryScreen = ({ navigation }) => {
                       color={MD3Colors.black500} 
                       size={15}
                     />
-                    <Text style={{fontSize:20, fontWeight:'bold', color: MD3Colors.black500, marginLeft:5} }>{ order.totalPrice} DT</Text>
+                    <Text style={{fontSize:20, fontWeight:'bold', color: MD3Colors.black500, marginLeft:5} }>{ order.totalPrice} VND</Text>
                   </View>
 
                   <View 

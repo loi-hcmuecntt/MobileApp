@@ -12,18 +12,16 @@ import MenuItemScreen from './source/screen/MenuItemScreen';
 import OrderDetailScreen from './source/screen/OrderDetailScreen';
 import CartScreen from './source/screen/CartScreen';
 import CheckoutScreen from './source/screen/CheckoutScreen';
-import RestaurentsScreen from './source/screen/RestaurentsScreen';
+import RestaurantsScreen from './source/screen/RestaurantsScreen';
 import ProfileScreen from './source/screen/ProfileScreen';
 
 
 import { DrawerNavigation } from './source/components'
 import store from "./source/redux/store";
-import { createDrawerNavigator } from '@react-navigation/drawer';
 
 const Stack = createNativeStackNavigator();
-const Drawer = createDrawerNavigator
 
-export default function App() : React.JSX.Element {
+export default function App() {
   return (
     <Provider store={store}>
       <ToastProvider>
@@ -38,7 +36,7 @@ export default function App() : React.JSX.Element {
             <Stack.Screen name="MenuItemScreen" component={MenuItemScreen} />
             <Stack.Screen name="OrderDetailScreen" component={OrderDetailScreen} />
             <Stack.Screen name="CartScreen" component={CartScreen} />
-            <Stack.Screen name="RestaurentsScreen" component={RestaurentsScreen} />
+            <Stack.Screen name="RestaurantsScreen" component={RestaurantsScreen} />
             <Stack.Screen name="CheckoutScreen" component={CheckoutScreen} />
             <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
           </Stack.Navigator>

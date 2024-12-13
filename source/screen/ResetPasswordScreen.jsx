@@ -15,7 +15,7 @@ const ResetPasswordScreen = ({ navigation }) => {
   const onResetPressed = async () => {
     setLoading(true)
     if(!email) {
-      toast.show("Email is required !", {
+      toast.show("Vui lòng nhập Email!", {
         type: "danger",
         placement:"bottom",
         duration: 4000,
@@ -61,7 +61,7 @@ const ResetPasswordScreen = ({ navigation }) => {
       </View>
       <View style={styles.main} >
         <Text style={{fontSize: 30, color: '#000', fontWeight: 'bold'}}>
-          Forgot Password ?
+          Quên mật khẩu?
         </Text>
         <View style={styles.inputView}>
           <TextInput
@@ -75,7 +75,7 @@ const ResetPasswordScreen = ({ navigation }) => {
           />
         </View>
         <View style={styles.forgotPassword}>
-          <Text style={styles.forgot}>You will receive email with the password </Text>
+          <Text style={styles.forgot}>Bạn sẽ nhận được email với mật khẩu mới</Text>
         </View>
         <Button 
           mode="contained" 
@@ -85,7 +85,7 @@ const ResetPasswordScreen = ({ navigation }) => {
           onPress={onResetPressed}
           style={styles.button}
         >
-          SEND INSTRUCTIONS
+          Gửi
         </Button>
       </View>
     </View>

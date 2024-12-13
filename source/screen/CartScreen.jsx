@@ -40,7 +40,7 @@ const CartScreen = ({ navigation }) => {
       <View style={styles.container}>
         <View style={{ flexDirection: "row", alignItems: 'center'}}>
           <View style={{ flex: 1 }}>
-            <Text style={{fontSize:20, fontWeight:'bold'}}> Cart</Text>
+            <Text style={{fontSize:20, fontWeight:'bold'}}> Giỏ hàng</Text>
           </View>
           <IconButton
             icon="basket-off"
@@ -48,7 +48,7 @@ const CartScreen = ({ navigation }) => {
             size={30}
             onPress={ () => {
               dispatch(clear())
-              toast.show("Your Cart is clear", {
+              toast.show("Giỏ hàng đang trống", {
                 type: "info",
                 placement:"bottom",
                 duration: 4000,
@@ -103,7 +103,7 @@ const CartScreen = ({ navigation }) => {
                       color='#3C4048'
                       size={15}
                     />
-                    <Text style={{fontSize:15, color: '#3C4048', marginLeft:5} }>{item.quantity+' x ' +item.price} DT</Text>
+                    <Text style={{fontSize:15, color: '#3C4048', marginLeft:5} }>{item.quantity+' x ' +item.price} VND</Text>
                   </View>
 
                   <View 
@@ -114,7 +114,7 @@ const CartScreen = ({ navigation }) => {
                     }}
                   >
                     <IconButton
-                      icon="cart-minus"
+                      icon="minus"
                       color={MD3Colors.blue500}
                       size={20}
                       onPress={() => {
@@ -132,7 +132,7 @@ const CartScreen = ({ navigation }) => {
                       <Text style={{fontSize:20, textAlign:'center'}}>{item.quantity}</Text>
                     </View>
                     <IconButton
-                      icon="cart-plus"
+                      icon="plus"
                       color={MD3Colors.blue500}
                       size={20}
                       onPress={() => dispatch(increment(item._id))}
@@ -187,10 +187,10 @@ const CartScreen = ({ navigation }) => {
           <Button 
             mode="contained" 
             buttonColor="#3C4048"
-            onPress={() => navigation.navigate("RestaurentsScreen", { restaurant:route.params.restaurant, user:route.params.user})}
+            onPress={() => navigation.navigate("RestaurantsScreen", { restaurant:route.params.restaurant, user:route.params.user})}
             style={[styles.button, styles.leftBtn]}
           >
-            <Ionicons name="chevron-back-outline" color={MD3Colors.white} size={30} />
+            <Ionicons name="chevron-back-outline" color={MD3Colors.white} size={20} />
           </Button>
           <Button 
             mode="contained" 
@@ -199,7 +199,7 @@ const CartScreen = ({ navigation }) => {
             onPress={() => navigation.navigate("CheckoutScreen", { restaurant:route.params.restaurant, user:route.params.user})}
             style={[styles.button, styles.rightBtn]}
           >
-            <Ionicons name="checkmark-outline" color={MD3Colors.white} size={30} />
+            <Ionicons name="checkmark-outline" color={MD3Colors.white} size={20} />
           </Button>
         </View>
       </View>
@@ -243,7 +243,7 @@ const styles = StyleSheet.create({
   priceView:{
     margin:20,
     backgroundColor:'#FFF',
-    borderRadius:30,
+    borderRadius:10,
     borderColor:"#dadada",
   },
   btnView:{
@@ -256,12 +256,10 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   leftBtn:{
-    borderBottomLeftRadius:30,
-    borderTopRightRadius:30,
+    borderRadius:10,
   },
   rightBtn:{
-    borderBottomRightRadius:30,
-    borderTopLeftRadius:30,
+    borderRadius:10,
   },
 })
 export default CartScreen

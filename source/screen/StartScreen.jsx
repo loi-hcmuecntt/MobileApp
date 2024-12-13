@@ -13,7 +13,7 @@ const StartScreen = ({ navigation }) => {
       </View>
       <View style={styles.footer} >
         <Text style={styles.title}>
-          Ứng dụng giao hàng bởi Nhóm 21
+          Ứng dụng gọi món ăn bởi Nhóm 18
         </Text>
         <View style={styles.btnView}>
           <Button 
