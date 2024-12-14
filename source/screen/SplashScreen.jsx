@@ -7,12 +7,12 @@ const SplashScreen = ({ navigation }) => {
   useEffect(() => {
     setTimeout(() => {
       navigation.navigate('StartScreen')
-    },5000)
+    },3000)
   })
   return (
     <View style={styles.container}>
       <Image source={require('../assets/logo.png')} style={styles.image}/>
-      <ActivityIndicator animating={true} color={MD3Colors.white} size='large'/>
+      <ActivityIndicator animating={true} color={MD3Colors.primary99} size='large'/>
     </View>
   )
 }

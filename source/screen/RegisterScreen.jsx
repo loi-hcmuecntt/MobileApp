@@ -194,7 +194,7 @@ const RegisterScreen = ({ navigation }) => {
           <Button 
             mode="contained" 
             loading={loading}
-            buttonColor="#CACFD2"
+            buttonColor="#1687FF"
             onPress={ () => onSignupPressed()}
             style={styles.button}
           >

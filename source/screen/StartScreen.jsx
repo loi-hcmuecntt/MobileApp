@@ -18,7 +18,7 @@ const StartScreen = ({ navigation }) => {
         <View style={styles.btnView}>
           <Button 
             mode="contained" 
-            color="#1687FF"
+            buttonColor="#1687FF"
             onPress={() => navigation.navigate("LoginScreen")}
             style={styles.button}
           >
@@ -27,7 +27,7 @@ const StartScreen = ({ navigation }) => {
 
           <Button 
             mode="contained" 
-            color="#CACFD2"
+            buttonColor="#1687FF"
             onPress={() => navigation.navigate("RegisterScreen")}
             style={styles.button}>
             Đăng ký

@@ -119,7 +119,7 @@ const LoginScreen = ({ navigation }) => {
           mode="contained" 
           loading={loading}
           compact={false} 
-          color="#1687FF"
+          buttonColor="#1687FF"
           onPress={onLoginPressed}
           style={styles.button}
         >
