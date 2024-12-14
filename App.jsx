@@ -6,17 +6,14 @@ import { Provider } from 'react-redux';
 import SplashScreen  from "./source/screen/SplashScreen";
 import StartScreen  from "./source/screen/StartScreen";
 import LoginScreen from './source/screen/LoginScreen';
-import ResetPasswordScreen from './source/screen/ResetPasswordScreen';
 import RegisterScreen from './source/screen/RegisterScreen';
 import MenuItemScreen from './source/screen/MenuItemScreen';
 import OrderDetailScreen from './source/screen/OrderDetailScreen';
 import CartScreen from './source/screen/CartScreen';
 import CheckoutScreen from './source/screen/CheckoutScreen';
 import RestaurantsScreen from './source/screen/RestaurantsScreen';
-import ProfileScreen from './source/screen/ProfileScreen';
 
 
-import { DrawerNavigation } from './source/components'
 import store from "./source/redux/store";
 
 const Stack = createNativeStackNavigator();
@@ -31,14 +28,11 @@ export default function App() {
             <Stack.Screen name="StartScreen" component={StartScreen} />
             <Stack.Screen name="LoginScreen" component={LoginScreen} />
             <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
-            <Stack.Screen name="ResetPasswordScreen" component={ResetPasswordScreen} />
-            <Stack.Screen name="Hello" component={DrawerNavigation} />
             <Stack.Screen name="MenuItemScreen" component={MenuItemScreen} />
             <Stack.Screen name="OrderDetailScreen" component={OrderDetailScreen} />
             <Stack.Screen name="CartScreen" component={CartScreen} />
             <Stack.Screen name="RestaurantsScreen" component={RestaurantsScreen} />
             <Stack.Screen name="CheckoutScreen" component={CheckoutScreen} />
-            <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
           </Stack.Navigator>
         </NavigationContainer>
       </ToastProvider>
