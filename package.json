@@ -10,7 +10,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "@bam.tech/react-native-make": "^3.0.3",
     "@react-native-async-storage/async-storage": "^2.1.0",
     "@react-native-community/masked-view": "^0.1.11",
     "@react-navigation/bottom-tabs": "^7.2.0",
@@ -29,8 +28,7 @@
     "react-native-select-dropdown": "^4.0.1",
     "react-native-toast-notifications": "^3.4.0",
     "react-native-vector-icons": "^10.2.0",
-    "react-redux": "^9.2.0",
-    "vietnamese-unicode-toolkit": "^0.0.4"
+    "react-redux": "^9.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
