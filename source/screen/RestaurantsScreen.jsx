@@ -8,7 +8,6 @@ import { useRoute, useFocusEffect } from '@react-navigation/native';
 import { useDispatch, useSelector } from 'react-redux'
 import { API, HOST } from '../configs';
 import { cartTotalSelector } from "../redux/selector";
-import * as converter from 'vietnamese-unicode-toolkit'
 
 const RestaurantsScreen = ({ navigation }) => {
 

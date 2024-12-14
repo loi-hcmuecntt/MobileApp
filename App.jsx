@@ -12,6 +12,7 @@ import OrderDetailScreen from './source/screen/OrderDetailScreen';
 import CartScreen from './source/screen/CartScreen';
 import CheckoutScreen from './source/screen/CheckoutScreen';
 import RestaurantsScreen from './source/screen/RestaurantsScreen';
+import DrawerNavigation from './source/components/DrawerNavigation';
 
 
 import store from "./source/redux/store";
@@ -27,6 +28,7 @@ export default function App() {
             <Stack.Screen name="SplashScreen" component={SplashScreen} />
             <Stack.Screen name="StartScreen" component={StartScreen} />
             <Stack.Screen name="LoginScreen" component={LoginScreen} />
+            <Stack.Screen name="Hello" component={DrawerNavigation} />
             <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
             <Stack.Screen name="MenuItemScreen" component={MenuItemScreen} />
             <Stack.Screen name="OrderDetailScreen" component={OrderDetailScreen} />
